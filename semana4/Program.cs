@@ -2,12 +2,14 @@
 
 namespace AgendaTelefonica
 {
+    // Clase que representa un contacto en la agenda
     class Contacto
     {
         public string Nombre { get; set; }
         public string Telefono { get; set; }
         public string Correo { get; set; }
 
+        // Método para mostrar la información de un contacto
         public void Mostrar()
         {
             Console.WriteLine($"Nombre: {Nombre}, Teléfono: {Telefono}, Correo: {Correo}");
@@ -16,14 +18,16 @@ namespace AgendaTelefonica
 
     class Program
     {
+        // Arreglo para almacenar los contactos
         static Contacto[] agenda = new Contacto[100];
-        static int contador = 0;
+        static int contador = 0; // Lleva la cuenta de contactos ingresados
 
         static void Main()
         {
             int opcion;
             do
             {
+                // Mostrar el menú principal
                 Console.WriteLine("\n--- MENÚ AGENDA ---");
                 Console.WriteLine("1. Agregar contacto");
                 Console.WriteLine("2. Mostrar contactos");
@@ -32,12 +36,14 @@ namespace AgendaTelefonica
                 Console.WriteLine("5. Salir");
                 Console.Write("Seleccione una opción: ");
 
+                // Validar que la entrada sea un número
                 if (!int.TryParse(Console.ReadLine(), out opcion))
                 {
                     Console.WriteLine("Por favor, ingrese un número válido.");
                     continue;
                 }
 
+                // Ejecutar la opción seleccionada
                 switch (opcion)
                 {
                     case 1: AgregarContacto(); break;
@@ -47,9 +53,10 @@ namespace AgendaTelefonica
                     case 5: Console.WriteLine("Saliendo..."); break;
                     default: Console.WriteLine("Opción inválida."); break;
                 }
-            } while (opcion != 5);
+            } while (opcion != 5); // Repetir hasta que el usuario elija salir
         }
 
+        // Método para agregar un nuevo contacto
         static void AgregarContacto()
         {
             if (contador < agenda.Length)
@@ -61,7 +68,8 @@ namespace AgendaTelefonica
                 nuevo.Telefono = Console.ReadLine();
                 Console.Write("Ingrese correo: ");
                 nuevo.Correo = Console.ReadLine();
-                agenda[contador++] = nuevo;
+
+                agenda[contador++] = nuevo; // Guardar el nuevo contacto
                 Console.WriteLine("Contacto agregado con éxito.");
             }
             else
@@ -70,6 +78,7 @@ namespace AgendaTelefonica
             }
         }
 
+        // Método para mostrar todos los contactos
         static void MostrarContactos()
         {
             if (contador == 0)
@@ -82,10 +91,11 @@ namespace AgendaTelefonica
             for (int i = 0; i < contador; i++)
             {
                 Console.Write($"{i + 1}. ");
-                agenda[i].Mostrar();
+                agenda[i].Mostrar(); // Mostrar cada contacto
             }
         }
 
+        // Método para buscar un contacto por nombre
         static void BuscarContacto()
         {
             if (contador == 0)
@@ -114,6 +124,7 @@ namespace AgendaTelefonica
             }
         }
 
+        // Método para eliminar un contacto por nombre
         static void EliminarContacto()
         {
             if (contador == 0)
@@ -129,12 +140,13 @@ namespace AgendaTelefonica
             {
                 if (agenda[i].Nombre.ToLower() == nombre)
                 {
-                    // Mover los contactos posteriores una posición hacia atrás
+                    // Desplazar los contactos hacia atrás para eliminar el contacto actual
                     for (int j = i; j < contador - 1; j++)
                     {
                         agenda[j] = agenda[j + 1];
                     }
-                    agenda[--contador] = null;
+
+                    agenda[--contador] = null; // Eliminar el último duplicado
                     Console.WriteLine("Contacto eliminado.");
                     return;
                 }
@@ -143,5 +155,4 @@ namespace AgendaTelefonica
         }
     }
 }
-
 
