@@ -1,0 +1,15 @@
+C:\Users\Jhon\Documents\proyectos\Proyecto08\bin\Debug\net9.0\Proyecto08.exe
+C:\Users\Jhon\Documents\proyectos\Proyecto08\bin\Debug\net9.0\Proyecto08.deps.json
+C:\Users\Jhon\Documents\proyectos\Proyecto08\bin\Debug\net9.0\Proyecto08.runtimeconfig.json
+C:\Users\Jhon\Documents\proyectos\Proyecto08\bin\Debug\net9.0\Proyecto08.dll
+C:\Users\Jhon\Documents\proyectos\Proyecto08\bin\Debug\net9.0\Proyecto08.pdb
+C:\Users\Jhon\Documents\proyectos\Proyecto08\obj\Debug\net9.0\Proyecto08.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jhon\Documents\proyectos\Proyecto08\obj\Debug\net9.0\Proyecto08.AssemblyInfoInputs.cache
+C:\Users\Jhon\Documents\proyectos\Proyecto08\obj\Debug\net9.0\Proyecto08.AssemblyInfo.cs
+C:\Users\Jhon\Documents\proyectos\Proyecto08\obj\Debug\net9.0\Proyecto08.csproj.CoreCompileInputs.cache
+C:\Users\Jhon\Documents\proyectos\Proyecto08\obj\Debug\net9.0\Proyecto08.sourcelink.json
+C:\Users\Jhon\Documents\proyectos\Proyecto08\obj\Debug\net9.0\Proyecto08.dll
+C:\Users\Jhon\Documents\proyectos\Proyecto08\obj\Debug\net9.0\refint\Proyecto08.dll
+C:\Users\Jhon\Documents\proyectos\Proyecto08\obj\Debug\net9.0\Proyecto08.pdb
+C:\Users\Jhon\Documents\proyectos\Proyecto08\obj\Debug\net9.0\Proyecto08.genruntimeconfig.cache
+C:\Users\Jhon\Documents\proyectos\Proyecto08\obj\Debug\net9.0\ref\Proyecto08.dll
