@@ -2,61 +2,69 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace VacunacionCOVID
+namespace CampanaVacunacion
 {
     class Program
     {
         static void Main(string[] args)
         {
-            // Conjunto total de ciudadanos ficticios (500 ciudadanos)
-            HashSet<string> ciudadanos = new HashSet<string>();
-            for (int i = 1; i <= 500; i++)
-            {
-                ciudadanos.Add("Ciudadano " + i);
-            }
+            Console.WriteLine("=== Campaña de Vacunación COVID-19 ===");
+            
+            const int totalCiudadanos = 500;
+            const int numPfizer = 75;
+            const int numAstraZeneca = 75;
 
-            // Conjunto de ciudadanos vacunados con Pfizer (75 ciudadanos ficticios)
-            HashSet<string> vacunadosPfizer = new HashSet<string>();
-            for (int i = 1; i <= 75; i++)
-            {
-                vacunadosPfizer.Add("Ciudadano " + i);
-            }
+            HashSet<string> todosCiudadanos = GenerarCiudadanos(totalCiudadanos);
+            HashSet<string> vacunadosPfizer = GenerarVacunados(numPfizer);
+            HashSet<string> vacunadosAstraZeneca = GenerarVacunados(numAstraZeneca);
 
-            // Conjunto de ciudadanos vacunados con AstraZeneca (75 ciudadanos ficticios)
-            HashSet<string> vacunadosAstraZeneca = new HashSet<string>();
-            for (int i = 50; i < 125; i++) // algunos coincidirán con Pfizer
-            {
-                vacunadosAstraZeneca.Add("Ciudadano " + i);
-            }
-
-            // 1. Ciudadanos que no se han vacunado
             HashSet<string> vacunados = new HashSet<string>(vacunadosPfizer.Union(vacunadosAstraZeneca));
-            HashSet<string> noVacunados = new HashSet<string>(ciudadanos.Except(vacunados));
-
-            // 2. Ciudadanos que han recibido ambas dosis (intersección de Pfizer y AstraZeneca)
+            HashSet<string> noVacunados = new HashSet<string>(todosCiudadanos.Except(vacunados));
             HashSet<string> ambasDosis = new HashSet<string>(vacunadosPfizer.Intersect(vacunadosAstraZeneca));
-
-            // 3. Ciudadanos que solo han recibido Pfizer (Pfizer - AstraZeneca)
             HashSet<string> soloPfizer = new HashSet<string>(vacunadosPfizer.Except(vacunadosAstraZeneca));
-
-            // 4. Ciudadanos que solo han recibido AstraZeneca (AstraZeneca - Pfizer)
             HashSet<string> soloAstraZeneca = new HashSet<string>(vacunadosAstraZeneca.Except(vacunadosPfizer));
 
-            // Mostrar resultados en consola
-            Console.WriteLine("==== LISTADOS DE VACUNACIÓN ====");
-            Console.WriteLine("\n1. Ciudadanos no vacunados: " + noVacunados.Count);
-            Console.WriteLine(string.Join(", ", noVacunados.Take(20)) + " ...");
+            Console.WriteLine($"\nTotal ciudadanos: {totalCiudadanos}");
+            Console.WriteLine($"Vacunados con Pfizer: {vacunadosPfizer.Count}");
+            Console.WriteLine($"Vacunados con AstraZeneca: {vacunadosAstraZeneca.Count}");
+            Console.WriteLine($"Vacunados: {vacunados.Count}");
+            Console.WriteLine($"No vacunados: {noVacunados.Count}");
+            Console.WriteLine($"Ambas dosis: {ambasDosis.Count}");
+            Console.WriteLine($"Solo Pfizer: {soloPfizer.Count}");
+            Console.WriteLine($"Solo AstraZeneca: {soloAstraZeneca.Count}");
 
-            Console.WriteLine("\n2. Ciudadanos con ambas dosis: " + ambasDosis.Count);
-            Console.WriteLine(string.Join(", ", ambasDosis));
+            // Mostrar los ciudadanos de cada grupo
+            ImprimirGrupo("\n--- Ciudadanos vacunados con Pfizer ---", vacunadosPfizer);
+            ImprimirGrupo("\n--- Ciudadanos vacunados con AstraZeneca ---", vacunadosAstraZeneca);
+            ImprimirGrupo("\n--- Ciudadanos con ambas dosis ---", ambasDosis);
+            ImprimirGrupo("\n--- Ciudadanos solo con Pfizer ---", soloPfizer);
+            ImprimirGrupo("\n--- Ciudadanos solo con AstraZeneca ---", soloAstraZeneca);
+            ImprimirGrupo("\n--- Ciudadanos no vacunados ---", noVacunados);
+        }
 
-            Console.WriteLine("\n3. Ciudadanos solo con Pfizer: " + soloPfizer.Count);
-            Console.WriteLine(string.Join(", ", soloPfizer));
+        static HashSet<string> GenerarCiudadanos(int cantidad)
+        {
+            HashSet<string> conjunto = new HashSet<string>();
+            for (int i = 1; i <= cantidad; i++)
+                conjunto.Add("Ciudadano " + i);
+            return conjunto;
+        }
 
-            Console.WriteLine("\n4. Ciudadanos solo con AstraZeneca: " + soloAstraZeneca.Count);
-            Console.WriteLine(string.Join(", ", soloAstraZeneca));
+        static HashSet<string> GenerarVacunados(int nv)
+        {
+            HashSet<string> conjunto = new HashSet<string>();
+            Random random = new Random();
+            while (conjunto.Count < nv)
+                conjunto.Add("Ciudadano " + random.Next(1, 501));
+            return conjunto;
+        }
 
-            Console.WriteLine("\nProceso finalizado.");
+        static void ImprimirGrupo(string titulo, HashSet<string> grupo)
+        {
+            Console.WriteLine(titulo);
+            foreach (var ciudadano in grupo)
+                Console.Write(ciudadano + " ");
+            Console.WriteLine("\n");
         }
     }
 }
