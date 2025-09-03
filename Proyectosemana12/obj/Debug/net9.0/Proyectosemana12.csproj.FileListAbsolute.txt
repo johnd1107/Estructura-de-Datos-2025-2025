@@ -1,0 +1,15 @@
+C:\Users\Jhon\Documents\proyectos\Proyectosemana12\bin\Debug\net9.0\Proyectosemana12.exe
+C:\Users\Jhon\Documents\proyectos\Proyectosemana12\bin\Debug\net9.0\Proyectosemana12.deps.json
+C:\Users\Jhon\Documents\proyectos\Proyectosemana12\bin\Debug\net9.0\Proyectosemana12.runtimeconfig.json
+C:\Users\Jhon\Documents\proyectos\Proyectosemana12\bin\Debug\net9.0\Proyectosemana12.dll
+C:\Users\Jhon\Documents\proyectos\Proyectosemana12\bin\Debug\net9.0\Proyectosemana12.pdb
+C:\Users\Jhon\Documents\proyectos\Proyectosemana12\obj\Debug\net9.0\Proyectosemana12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jhon\Documents\proyectos\Proyectosemana12\obj\Debug\net9.0\Proyectosemana12.AssemblyInfoInputs.cache
+C:\Users\Jhon\Documents\proyectos\Proyectosemana12\obj\Debug\net9.0\Proyectosemana12.AssemblyInfo.cs
+C:\Users\Jhon\Documents\proyectos\Proyectosemana12\obj\Debug\net9.0\Proyectosemana12.csproj.CoreCompileInputs.cache
+C:\Users\Jhon\Documents\proyectos\Proyectosemana12\obj\Debug\net9.0\Proyectosemana12.sourcelink.json
+C:\Users\Jhon\Documents\proyectos\Proyectosemana12\obj\Debug\net9.0\Proyectosemana12.dll
+C:\Users\Jhon\Documents\proyectos\Proyectosemana12\obj\Debug\net9.0\refint\Proyectosemana12.dll
+C:\Users\Jhon\Documents\proyectos\Proyectosemana12\obj\Debug\net9.0\Proyectosemana12.pdb
+C:\Users\Jhon\Documents\proyectos\Proyectosemana12\obj\Debug\net9.0\Proyectosemana12.genruntimeconfig.cache
+C:\Users\Jhon\Documents\proyectos\Proyectosemana12\obj\Debug\net9.0\ref\Proyectosemana12.dll
