@@ -1,0 +1,15 @@
+C:\Users\Jhon\Documents\proyectos\semana13\bin\Debug\net9.0\semana13.exe
+C:\Users\Jhon\Documents\proyectos\semana13\bin\Debug\net9.0\semana13.deps.json
+C:\Users\Jhon\Documents\proyectos\semana13\bin\Debug\net9.0\semana13.runtimeconfig.json
+C:\Users\Jhon\Documents\proyectos\semana13\bin\Debug\net9.0\semana13.dll
+C:\Users\Jhon\Documents\proyectos\semana13\bin\Debug\net9.0\semana13.pdb
+C:\Users\Jhon\Documents\proyectos\semana13\obj\Debug\net9.0\semana13.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jhon\Documents\proyectos\semana13\obj\Debug\net9.0\semana13.AssemblyInfoInputs.cache
+C:\Users\Jhon\Documents\proyectos\semana13\obj\Debug\net9.0\semana13.AssemblyInfo.cs
+C:\Users\Jhon\Documents\proyectos\semana13\obj\Debug\net9.0\semana13.csproj.CoreCompileInputs.cache
+C:\Users\Jhon\Documents\proyectos\semana13\obj\Debug\net9.0\semana13.sourcelink.json
+C:\Users\Jhon\Documents\proyectos\semana13\obj\Debug\net9.0\semana13.dll
+C:\Users\Jhon\Documents\proyectos\semana13\obj\Debug\net9.0\refint\semana13.dll
+C:\Users\Jhon\Documents\proyectos\semana13\obj\Debug\net9.0\semana13.pdb
+C:\Users\Jhon\Documents\proyectos\semana13\obj\Debug\net9.0\semana13.genruntimeconfig.cache
+C:\Users\Jhon\Documents\proyectos\semana13\obj\Debug\net9.0\ref\semana13.dll
