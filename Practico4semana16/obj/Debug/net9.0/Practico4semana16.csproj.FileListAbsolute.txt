@@ -1,0 +1,15 @@
+C:\Users\Jhon\Documents\proyectos\Practico4semana16\obj\Debug\net9.0\Practico4semana16.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jhon\Documents\proyectos\Practico4semana16\obj\Debug\net9.0\Practico4semana16.AssemblyInfoInputs.cache
+C:\Users\Jhon\Documents\proyectos\Practico4semana16\obj\Debug\net9.0\Practico4semana16.AssemblyInfo.cs
+C:\Users\Jhon\Documents\proyectos\Practico4semana16\obj\Debug\net9.0\Practico4semana16.csproj.CoreCompileInputs.cache
+C:\Users\Jhon\Documents\proyectos\Practico4semana16\obj\Debug\net9.0\Practico4semana16.sourcelink.json
+C:\Users\Jhon\Documents\proyectos\Practico4semana16\bin\Debug\net9.0\Practico4semana16.exe
+C:\Users\Jhon\Documents\proyectos\Practico4semana16\bin\Debug\net9.0\Practico4semana16.deps.json
+C:\Users\Jhon\Documents\proyectos\Practico4semana16\bin\Debug\net9.0\Practico4semana16.runtimeconfig.json
+C:\Users\Jhon\Documents\proyectos\Practico4semana16\bin\Debug\net9.0\Practico4semana16.dll
+C:\Users\Jhon\Documents\proyectos\Practico4semana16\bin\Debug\net9.0\Practico4semana16.pdb
+C:\Users\Jhon\Documents\proyectos\Practico4semana16\obj\Debug\net9.0\Practico4semana16.dll
+C:\Users\Jhon\Documents\proyectos\Practico4semana16\obj\Debug\net9.0\refint\Practico4semana16.dll
+C:\Users\Jhon\Documents\proyectos\Practico4semana16\obj\Debug\net9.0\Practico4semana16.pdb
+C:\Users\Jhon\Documents\proyectos\Practico4semana16\obj\Debug\net9.0\Practico4semana16.genruntimeconfig.cache
+C:\Users\Jhon\Documents\proyectos\Practico4semana16\obj\Debug\net9.0\ref\Practico4semana16.dll

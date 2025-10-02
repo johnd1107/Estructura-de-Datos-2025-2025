@@ -1,0 +1,37 @@
+[
+  {
+    "Origen": "Quito",
+    "Destino": "Guayaquil",
+    "Costo": 50
+  },
+  {
+    "Origen": "Quito",
+    "Destino": "Manta",
+    "Costo": 80
+  },
+  {
+    "Origen": "Guayaquil",
+    "Destino": "Cuenca",
+    "Costo": 60
+  },
+  {
+    "Origen": "Manta",
+    "Destino": "Cuenca",
+    "Costo": 30
+  },
+  {
+    "Origen": "Cuenca",
+    "Destino": "Loja",
+    "Costo": 40
+  },
+  {
+    "Origen": "Manta",
+    "Destino": "Loja",
+    "Costo": 150
+  },
+  {
+    "Origen": "Guayaquil",
+    "Destino": "Loja",
+    "Costo": 120
+  }
+]
